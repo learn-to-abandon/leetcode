@@ -7,8 +7,7 @@ public:
         int d = matrix.size() - 1;
         int l = 0;
         int r = matrix[0].size() - 1;
-        while(true)
-        {
+        while(true) {
             for(int i = l; i <= r; ++i) ans.push_back(matrix[u][i]); //向右移动直到最右
             if(++ u > d) break; //重新设定上边界，若上边界大于下边界，则遍历遍历完成，下同
             for(int i = u; i <= d; ++i) ans.push_back(matrix[i][r]); //向下
